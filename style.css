@@ -93,6 +93,11 @@ header {
     cursor: pointer;
 }
 
+.hd-img img {
+    width: 100%;
+    max-width: 700px;
+}
+
 @keyframes mover {
 	0% {
 		transform: translateY(10rem) rotateY(-30deg);
