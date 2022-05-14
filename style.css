@@ -25,6 +25,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    /*position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;*/
 }
 
 .menu-desktop li {
@@ -63,6 +67,10 @@ header {
     justify-content: space-between;
 }
 
+.hd-conteudo, .hd-img {
+    width: 50%;
+}
+
 .hd-conteudo h1 {
     font-family: var(--fonte-primaria);
     animation: mover 1s 0.5s forwards;
@@ -85,6 +93,7 @@ header {
     color: var(--cor-primaria);
     font-family: var(--fonte-links);
     font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -93,9 +102,8 @@ header {
     cursor: pointer;
 }
 
-.hd-img img {
+.hd-img #main-img {
     width: 100%;
-    max-width: 700px;
 }
 
 @keyframes mover {
@@ -109,7 +117,8 @@ header {
 	}
 }
 
-/************ tablet ************/
+
+/************ celular ************/
 
 @media screen and (max-width: 809px){
     .menu-desktop {
@@ -147,5 +156,21 @@ header {
 		color: var(--cor-secundaria);
 		font-weight: 300;
 	}
+
+    .menu-mobile a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        padding: 10%;
+    }
+
+    .hd-conteudo, .hd-img {
+        width: 100%;
+    }
+
+    .hd-conteudo {
+        margin: 50px 0;
+    }
 
 }
