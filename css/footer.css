@@ -1,9 +1,14 @@
 footer {
     background-image: linear-gradient(#006494,black);
+    margin:0;
+    padding:0;
+    border: 0 ;
+    box-sizing: border-box;
 }
 
 #footer {
     color: var(--cor-secundaria);
+    display: flex;
 }
 
 #footer .flex-container-row-footer {
