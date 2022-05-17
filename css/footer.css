@@ -60,7 +60,7 @@ hr{
     margin: 50px;
 }
 
-#column-ul {
+.column-ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

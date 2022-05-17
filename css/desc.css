@@ -1,5 +1,5 @@
 #desc h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--fonte-primaria);
     color: var(--cor-primaria);
     text-align: center;
     margin: 20px;
@@ -9,12 +9,17 @@
 
 #desc h2{
     
-    font-family:var(--fonte-primaria);
+    font-family:var(--fonte-secundaria);
     font-size: 20px;
     color:black ;
     text-align: center;
     
 }
+
+#desc h3{
+    font-family:var(--fonte-secundaria); 
+}
+
 
 #desc {
 
@@ -28,7 +33,7 @@
     justify-content: center;
     align-items: center;
 
-    color: #434343;
+    color: #080808;
 
     font-size: 16px;
 }
@@ -88,20 +93,21 @@ main.cards section.card button {
     text-transform: uppercase;
     border-radius: 32px;
     border: 0;
+    cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: #434343;
-    margin-bottom: 16px 0;
+    color: black;
+    margin-bottom: 16px;
 }
 
 main.cards section.card.credito button {
-    background: linear-gradient(to right, #d9d20f, #edeb9c);
+    background: linear-gradient(to right, #e8f1f2, #c7c9cc);
 }
 main.cards section.card.taxas button {
-    background: linear-gradient(to right, #d9d20f, #edeb9c);
+    background: linear-gradient(to right, #e8f1f2, #c7c9cc);
 }
 main.cards section.card.investir button {
-    background: linear-gradient(to right, #d9d20f, #edeb9c);
+    background: linear-gradient(to right, #e8f1f2, #c7c9cc);
 }
 
 main.cards section.card.credito {
@@ -115,13 +121,14 @@ main.cards section.card.investir {
 }
 
 @media screen and (max-width: 520px) {
-    #desc h1, #desc h2{
+    #desc h1{
         font-size: 15px;
     
     }
 
     #desc h2{
         padding: 5px;
+        font-size: 15px;
     }
 
     #desc .align-colum{
