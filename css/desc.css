@@ -1,0 +1,147 @@
+
+	
+	
+#desc h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin: 20px;
+}
+
+
+#desc h2{
+    
+    font-family:var(--fonte-primaria);
+    font-size: 20px;
+    color:black ;
+    text-align: center;
+    
+}
+
+#desc {
+    background: #F6F9FF;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+
+    font-size: 16px;
+}
+
+#desc .align-colum{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1b98e0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 600px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    font-size: 80%;
+    font-weight: 500;
+    color: #434343;
+    margin-bottom: 16px 0;
+}
+
+main.cards section.card.credito button {
+    background: linear-gradient(to right, #d9d20f, #edeb9c);
+}
+main.cards section.card.taxas button {
+    background: linear-gradient(to right, #d9d20f, #edeb9c);
+}
+main.cards section.card.investir button {
+    background: linear-gradient(to right, #d9d20f, #edeb9c);
+}
+
+main.cards section.card.credito {
+    box-shadow: 20px 20px 50px -30px #13293d;
+}
+main.cards section.card.taxas {
+    box-shadow: 20px 20px 50px -30px #13293d;
+}
+main.cards section.card.investir {
+    box-shadow: 20px 20px 50px -30px #13293d;
+}
+
+@media screen and (max-width: 520px) {
+    #desc h1, #desc h2{
+        font-size: 100%;
+    }
+
+    #desc .align-colum{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    main.cards {
+        flex-direction: column;
+        
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
